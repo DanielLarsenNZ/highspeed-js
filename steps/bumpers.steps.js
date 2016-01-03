@@ -1,6 +1,6 @@
 /*global defineStep, expect, Bumpers */
 
-defineStep(/When the ball hits a bumper: fire (.*) solenoid, score (.*) points, sound (.*)/, function (solenoid, points, sound) {
+defineStep(/When the ball hits a bumper: fire (.*) solenoid, sound (.*), score (.*) points/, function (solenoid, points, sound) {
 	"define strict";
   
   var mocks = require('./mocks/bumpermocks.js');
