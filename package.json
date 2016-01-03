@@ -1,0 +1,20 @@
+{
+  "name": "highspeed.js",
+  "version": "0.1.0",
+  "description": "High Speed Pinball machine game code written in JavaScript for Raspberry Pi and a custom GPIO based Driver board.",
+  "main": "main.js",
+  "scripts": {
+    "test": "daspec"
+  },
+  "keywords": [
+    "pinball",
+    "javascript",
+    "raspberry",
+    "pi"
+  ],
+  "author": "@DanielLarsenNZ",
+  "license": "MIT",
+  "devDependencies": {
+    "daspec": "^1.1.0"
+  }
+}
