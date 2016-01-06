@@ -1,6 +1,7 @@
 # highspeed.js
-Experiments in test-driven Pinball game code development with daspec/daspec-js-npm
+Experiments in test-driven Pinball game code development with [DaSpec]
 
 **WIP**
 
 
+[DaSpec]:https://github.com/daspec/daspec-js-npm
