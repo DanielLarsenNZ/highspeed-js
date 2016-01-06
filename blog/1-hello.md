@@ -10,7 +10,7 @@
   code from scratch.
 * Rather than use Python I also thought it would be interesting to code the game 
   in JavaScript and see what the game performance is like using async programming and
-  Node.js's event loop.
+  Node.js.
 * Rather than reverse engineer the 6800 machine code I thought I would Code the game
   from the [Rules List] which is well known (but not perfectly documented). 
 * This _seems like_ a good opportunity to use SBE techniques, TDD and the [DaSpec]
