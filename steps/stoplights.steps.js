@@ -4,9 +4,9 @@ defineStep(/When Stoplight Target is hit, if it is not made, make Target./,
 	"define strict";
   
   var mocks = require('./mocks/gamemocks.js');
-  var lights = new mocks.MockLights();
-  var scores = new mocks.MockScores();
-  var sounds = new mocks.MockSounds();
+  var lights = new mocks.Lights();
+  var scores = new mocks.Scores();
+  var sounds = new mocks.Sounds();
   
   var stoplights = new Stoplights(lights, scores, sounds);
   
@@ -23,9 +23,9 @@ defineStep(/When Stoplight Target is made, light target, add (.*) Bonus Points, 
 	"define strict";
   
   var mocks = require('./mocks/gamemocks.js');
-  var lights = new mocks.MockLights();
-  var scores = new mocks.MockScores();
-  var sounds = new mocks.MockSounds();
+  var lights = new mocks.Lights();
+  var scores = new mocks.Scores();
+  var sounds = new mocks.Sounds();
   
   var stoplights = new Stoplights(lights, scores, sounds);
   
@@ -42,9 +42,9 @@ defineStep(/When Stoplight Target is made, if all Stoplight Targets are made, ad
 	"define strict";
   
   var mocks = require('./mocks/gamemocks.js');
-  var lights = new mocks.MockLights();
-  var scores = new mocks.MockScores();
-  var sounds = new mocks.MockSounds();
+  var lights = new mocks.Lights();
+  var scores = new mocks.Scores();
+  var sounds = new mocks.Sounds();
   
   var stoplights = new Stoplights(lights, scores, sounds);
   stoplights.made[3] = true;

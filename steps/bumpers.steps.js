@@ -3,10 +3,11 @@
 defineStep(/When the ball hits a bumper: fire (.*) solenoid, sound (.*), score (.*) points/, function (solenoid, points, sound) {
 	"define strict";
   
-  var mocks = require('./mocks/bumpermocks.js');
-  var solenoids = new mocks.MockSolenoids();
-  var scores = new mocks.MockScores();
-  var sounds = new mocks.MockSounds();
+  var mocks = require('./mocks/gamemocks.js');
+  var solenoids = new mocks.Solenoids();
+  var scores = new mocks.Scores();
+  var sounds = new mocks.Sounds();
+  
   var bumpers = new Bumpers(solenoids, scores, sounds);
   
   bumpers.hit(0, function(error){

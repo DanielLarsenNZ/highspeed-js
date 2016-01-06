@@ -1,14 +1,19 @@
-module.exports.MockLights = function () {
+module.exports.Lights = function () {
   "define strict";
   
 };
 
-module.exports.MockScores = function () {
+module.exports.Scores = function () {
   "define strict";
   
 };
 
-module.exports.MockSounds = function () {
+module.exports.Sounds = function () {
+  "define strict";
+  
+};
+
+module.exports.Solenoids = function () {
   "define strict";
   
 };
