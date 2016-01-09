@@ -12,7 +12,7 @@ defineStep(/When the ball hits a bumper: fire (.*) solenoid, sound (.*), score (
   
   bumpers.hit(0, function(error){
     expect(solenoids.fired).toEqual(solenoid);  
-    expect(scores.player1score).toEqual(points);  
+    expect(scores.currentScore).toEqual(points);  
     expect(sounds.fired).toEqual(sound);  
   });
 
