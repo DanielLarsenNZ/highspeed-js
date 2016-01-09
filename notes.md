@@ -1,0 +1,1 @@
+is `this.scores[player] += score;` threadsafe?

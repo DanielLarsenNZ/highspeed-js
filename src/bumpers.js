@@ -9,8 +9,8 @@ var Bumpers = function(solenoids, scores, sounds){
   this.scores = scores;
   this.sounds = sounds;
   
-  this.hit = function(number, callback){
-    console.log("Bumpers.hit", number);
+  this.hit = function(number, player, callback){
+    console.log("Bumpers.hit number = %d, player = %d", number, player);
 
     var solenoid = 0;
     
@@ -25,7 +25,7 @@ var Bumpers = function(solenoids, scores, sounds){
     
     solenoids.fire(solenoid, function (error){
       if (error) callback(error);
-      scores.add(500, function (error){
+      scores.add(player, 500, function (error){
         if (error) callback(error);
         sounds.play("bumper.wav", function(error){
           if (error) callback(error);
