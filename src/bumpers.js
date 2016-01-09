@@ -10,6 +10,8 @@ var Bumpers = function(solenoids, scores, sounds){
   this.sounds = sounds;
   
   this.hit = function(number, callback){
+    console.log("Bumpers.hit", number);
+
     var solenoid = 0;
     
     switch (number){

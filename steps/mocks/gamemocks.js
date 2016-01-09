@@ -16,4 +16,12 @@ module.exports.Sounds = function () {
 module.exports.Solenoids = function () {
   "define strict";
   
+  this.fired = [];
+  
+  this.fire = function(number, callback){
+    console.log("gamemocks.js.Solenoids.fire", number);
+    this.fired.push(number);
+    callback(null);
+  };
+  
 };
