@@ -7,7 +7,6 @@ module.exports.Scores = function () {
   "define strict";
   this.scores = [0,0,0,0,0];
   
-  
   //* adds score to the current player's score */
   this.add = function(player, score, callback){
     console.log("gamemocks.js.Scores.add", player, score);

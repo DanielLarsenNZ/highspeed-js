@@ -10,10 +10,12 @@ defineStep(/When Stoplight Target is hit, if it is not made, make Target./,
   
   var stoplights = new Stoplights(lights, scores, sounds);
   
-  stoplights.made[0] = false;
+  stoplights.made[LOWER_LEFT_STOPLIGHT_GREEN] = false;
   
-  stoplights.hit(0, function(error){
-    expect(stoplights.made[0]).toEqual(true);
+  stoplights.hit(1, LOWER_LEFT_STOPLIGHT_GREEN, function(error){
+    if (error) throw error;
+    
+    expect(stoplights.made[LOWER_LEFT_STOPLIGHT_GREEN]).toEqual(true);
   });
 
 });
