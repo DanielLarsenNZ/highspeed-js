@@ -3,7 +3,7 @@ defineStep(/When Stoplight Target is hit, if it is not made, make Target./,
   function () {
 	"define strict";
   
-  var mocks = require('./mocks/gamemocks.js');
+  var mocks = require('./mocks/machinemocks.js');
   var lights = new mocks.Lights();
   var scores = new mocks.Scores();
   var sounds = new mocks.Sounds();
