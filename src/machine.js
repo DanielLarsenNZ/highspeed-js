@@ -22,6 +22,7 @@ module.exports = function (settings, registers) {
   this.Sounds = sounds;
   this.Solenoids = solenoids;
   
+  // ? buss size in Register settings?
   var defaultSettings = {
     lightBussSize: 64
   };
@@ -32,16 +33,16 @@ module.exports = function (settings, registers) {
     
     this.on = function(number){
       //
-      this.Registers[REGISTER_LIGHTS][number] = 1;
+      this.Registers.lights[number] = 1;
     };
     
     this.off = function(number){
       //
-      this.Registers[REGISTER_LIGHTS][number] = 0;
+      this.Registers.lights[number] = 0;
     }
     
     this.allOff = function(){
-      this.Registers[REGISTER_LIGHTS] = [];
+      this.Registers.resetLights();
     };
     
     this.test = function(){
